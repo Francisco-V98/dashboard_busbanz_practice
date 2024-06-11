@@ -19,3 +19,36 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/kid_sophia.png
+    - assets/images/kid_wade.png
+    - assets/images/kid_floyd.png
+    - assets/images/kid_veronica.png
+    - assets/images/imagen_de_andrea.png
+    - assets/images/imagen_de_conductor.png
+    - assets/images/imagen_de_carro.png
+
+fonts:
+  - family: Poppins
+    fonts:
+      - asset: assets/fonts/poppins/Poppins-Black.ttf
+      - asset: assets/fonts/poppins/Poppins-BlackItalic.ttf
+      - asset: assets/fonts/poppins/Poppins-Bold.ttf
+      - asset: assets/fonts/poppins/Poppins-BoldItalic.ttf
+      - asset: assets/fonts/poppins/Poppins-ExtraBold.ttf
+      - asset: assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf
+      - asset: assets/fonts/poppins/Poppins-ExtraLight.ttf
+      - asset: assets/fonts/poppins/Poppins-ExtraLightItalic.ttf
+      - asset: assets/fonts/poppins/Poppins-Italic.ttf
+      - asset: assets/fonts/poppins/Poppins-Light.ttf
+      - asset: assets/fonts/poppins/Poppins-LightItalic.ttf
+      - asset: assets/fonts/poppins/Poppins-Medium.ttf
+      - asset: assets/fonts/poppins/Poppins-MediumItalic.ttf
+      - asset: assets/fonts/poppins/Poppins-Regular.ttf
+      - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+      - asset: assets/fonts/poppins/Poppins-SemiBoldItalic.ttf
+
+
+
+
