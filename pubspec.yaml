@@ -19,3 +19,21 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/kid_sophia.png
+    - assets/images/kid_wade.png
+    - assets/images/kid_floyd.png
+    - assets/images/kid_veronica.png
+    - assets/images/imagen_de_andrea.png
+    - assets/images/imagen_de_conductor.png
+    - assets/images/imagen_de_carro.png
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/images/fonts/Poppins/Poppins-Black.ttf
+
+
+
+
