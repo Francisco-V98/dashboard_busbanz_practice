@@ -40,6 +40,16 @@ class _Body extends StatelessWidget {
           location: '/animationCircle',
         ),
         _CustomListTile(
+          title: 'Card Default',
+          subTitle: 'Card Default components',
+          location: '/card-default',
+        ),
+        _CustomListTile(
+          title: 'Card Active Route',
+          subTitle: 'Card Active Route components',
+          location: '/card-active-route',
+        ),
+        _CustomListTile(
           title: 'Principal Page',
           subTitle: 'Principal Page',
           location: '/principalPage',
