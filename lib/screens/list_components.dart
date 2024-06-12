@@ -35,14 +35,9 @@ class _Body extends StatelessWidget {
           location: '/timeLine',
         ),
         _CustomListTile(
-          title: 'Card-Default Dashboard',
-          subTitle: 'Componente card-defaults',
-          location: '/card-default',
-        ),
-        _CustomListTile(
-          title: 'Card-Active-Route Dashboard',
-          subTitle: 'Componente Card-Active-Route',
-          location: '/card-active-route',
+          title: 'Animation circle',
+          subTitle: 'Animation Circle',
+          location: '/animationCircle',
         ),
       ],
     );
