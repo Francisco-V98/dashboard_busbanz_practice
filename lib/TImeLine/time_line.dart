@@ -59,7 +59,7 @@ class TimeLineEvent extends StatelessWidget {
                     color: AppColors.infoLight,
                     shape: BoxShape.circle,
                     border: Border.all(
-                      color: Colors.white,
+                      color: AppColors.bgBotLight,
                       width: 5,
                     ),
                   ),
@@ -137,7 +137,7 @@ class TimeLineEvent extends StatelessWidget {
                     color: AppColors.greyLight,
                     shape: BoxShape.circle,
                     border: Border.all(
-                      color: Colors.white,
+                      color: AppColors.bgBotLight,
                       width: 5,
                     ),
                   ),
