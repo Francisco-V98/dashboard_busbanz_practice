@@ -20,7 +20,7 @@ class _Body extends StatelessWidget {
     return ListView(
       children: const [
         _CustomListTile(
-          title: 'Calendar',
+          title: 'Calendar / AppBar',
           subTitle: 'Componente Calendar Dashboard',
           location: '/calendar',
         ),
