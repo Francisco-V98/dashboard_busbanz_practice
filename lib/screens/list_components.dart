@@ -49,6 +49,11 @@ class _Body extends StatelessWidget {
           subTitle: 'Card Active Route components',
           location: '/card-active-route',
         ),
+        _CustomListTile(
+          title: 'Principal Page',
+          subTitle: 'Principal Page',
+          location: '/principalPage',
+        ),
       ],
     );
   }
