@@ -70,6 +70,11 @@ class CardActiveRoute extends StatelessWidget {
               const Spacer(),
               const Row(
                 children: [
+                  SizedBox(
+                    height: 100,
+                    width: 100,
+                    child: AnimationCircle(),
+                  ),
                   Icon(Icons.keyboard_arrow_right_outlined)
                 ],
               ),
