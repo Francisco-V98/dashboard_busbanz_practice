@@ -1,4 +1,4 @@
-import 'package:dashboard_busbanz_practice/Animation-Circle/animation_circle.dart';
+import 'package:dashboard_busbanz_practice/widgets/Animation-Circle/animation_circle.dart';
 import 'package:dashboard_busbanz_practice/TImeLine/time_line.dart';
 import 'package:dashboard_busbanz_practice/TimeLine-Header/time_line_header.dart';
 import 'package:dashboard_busbanz_practice/screens/screens.dart';
@@ -28,6 +28,14 @@ final appRouterProvider = Provider<GoRouter>(
         GoRoute(
           path: '/animationCircle',
           builder: (context, state) => const AnimationCircle(),
+        ),
+        GoRoute(
+          path: '/card-default',
+          builder: (context, state) => const CardDefaultScreen(),
+        ),
+        GoRoute(
+          path: '/card-active-route',
+          builder: (context, state) => const CardActiveRouteScreen(),
         ),
       ],
     );
