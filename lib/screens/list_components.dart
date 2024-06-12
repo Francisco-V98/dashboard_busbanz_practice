@@ -34,11 +34,6 @@ class _Body extends StatelessWidget {
           subTitle: 'Componente TimeLine Dashboard',
           location: '/timeLine',
         ),
-        _CustomListTile(
-          title: 'Animation circle',
-          subTitle: 'Animation Circle',
-          location: '/animationCircle',
-        ),
       ],
     );
   }
