@@ -28,6 +28,10 @@ final appRouterProvider = Provider<GoRouter>(
           path: '/card-default',
           builder: (context, state) => const CardDefaultScreen(),
         ),
+        GoRoute(
+          path: '/card-active-route',
+          builder: (context, state) => const CardActiveRouteScreen(),
+        ),
       ],
     );
   },
