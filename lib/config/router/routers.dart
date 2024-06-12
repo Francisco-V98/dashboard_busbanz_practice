@@ -1,3 +1,4 @@
+import 'package:dashboard_busbanz_practice/TImeLine/time_line.dart';
 import 'package:dashboard_busbanz_practice/TimeLine-Header/time_line_header.dart';
 import 'package:dashboard_busbanz_practice/screens/screens.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -18,6 +19,10 @@ final appRouterProvider = Provider<GoRouter>(
         GoRoute(
           path: '/timeLineHeader',
           builder: (context, state) => const TimeLineHeader(),
+        ),
+        GoRoute(
+          path: '/timeLine',
+          builder: (context, state) => const TimeLine(),
         ),
       ],
     );

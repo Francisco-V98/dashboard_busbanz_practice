@@ -26,8 +26,13 @@ class _Body extends StatelessWidget {
         ),
         _CustomListTile(
           title: 'TimeLine-Header',
-          subTitle: 'Componente Calendar Dashboard',
+          subTitle: 'Componente TimeLine-Header Dashboard',
           location: '/timeLineHeader',
+        ),
+        _CustomListTile(
+          title: 'TimeLine',
+          subTitle: 'Componente TimeLine Dashboard',
+          location: '/timeLine',
         ),
       ],
     );
