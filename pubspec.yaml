@@ -28,26 +28,44 @@ flutter:
     - assets/images/imagen_de_andrea.png
     - assets/images/imagen_de_conductor.png
     - assets/images/imagen_de_carro.png
+    - assets/images/fonts/Poppins/Poppins-Black.ttf
+    - assets/images/fonts/Poppins/Poppins-BlackItalic.ttf
+    - assets/images/fonts/Poppins/Poppins-Bold.ttf
+    - assets/images/fonts/Poppins/Poppins-BoldItalic.ttf
+    - assets/images/fonts/Poppins/Poppins-ExtraBold.ttf
+    - assets/images/fonts/Poppins/Poppins-ExtraBoldItalic.ttf
+    - assets/images/fonts/Poppins/Poppins-ExtraLight.ttf
+    - assets/images/fonts/Poppins/Poppins-ExtraLightItalic.ttf
+    - assets/images/fonts/Poppins/Poppins-Italic.ttf
+    - assets/images/fonts/Poppins/Poppins-Light.ttf
+    - assets/images/fonts/Poppins/Poppins-LightItalic.ttf
+    - assets/images/fonts/Poppins/Poppins-Medium.ttf
+    - assets/images/fonts/Poppins/Poppins-MediumItalic.ttf
+    - assets/images/fonts/Poppins/Poppins-Regular.ttf
+    - assets/images/fonts/Poppins/Poppins-SemiBold.ttf
+    - assets/images/fonts/Poppins/Poppins-SemiBoldItalic.ttf
 
-fonts:
-  - family: Poppins
-    fonts:
-      - asset: assets/fonts/poppins/Poppins-Black.ttf
-      - asset: assets/fonts/poppins/Poppins-BlackItalic.ttf
-      - asset: assets/fonts/poppins/Poppins-Bold.ttf
-      - asset: assets/fonts/poppins/Poppins-BoldItalic.ttf
-      - asset: assets/fonts/poppins/Poppins-ExtraBold.ttf
-      - asset: assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf
-      - asset: assets/fonts/poppins/Poppins-ExtraLight.ttf
-      - asset: assets/fonts/poppins/Poppins-ExtraLightItalic.ttf
-      - asset: assets/fonts/poppins/Poppins-Italic.ttf
-      - asset: assets/fonts/poppins/Poppins-Light.ttf
-      - asset: assets/fonts/poppins/Poppins-LightItalic.ttf
-      - asset: assets/fonts/poppins/Poppins-Medium.ttf
-      - asset: assets/fonts/poppins/Poppins-MediumItalic.ttf
-      - asset: assets/fonts/poppins/Poppins-Regular.ttf
-      - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
-      - asset: assets/fonts/poppins/Poppins-SemiBoldItalic.ttf
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/images/fonts/Poppins/Poppins-Black.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-BlackItalic.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-Bold.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-BoldItalic.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-ExtraBold.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-ExtraBoldItalic.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-ExtraLight.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-ExtraLightItalic.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-Italic.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-Light.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-LightItalic.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-Medium.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-MediumItalic.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-SemiBold.ttf
+        - asset: assets/images/fonts/Poppins/Poppins-SemiBoldItalic.ttf
+
+
 
 
 
