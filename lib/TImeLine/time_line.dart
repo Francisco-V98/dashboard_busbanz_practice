@@ -6,17 +6,12 @@ class TimeLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.yellow,
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TimeLineEvent(time: '6:30AM', isFirst: true),
-            TimeLineEvent(time: '5:30PM', isLast: true),
-          ],
-        ),
-      ),
+    return const Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        TimeLineEvent(time: '6:30AM', isFirst: true),
+        TimeLineEvent(time: '5:30PM', isLast: true),
+      ],
     );
   }
 }
@@ -35,133 +30,143 @@ class TimeLineEvent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final hour = time.substring(0, time.length - 2);
-    final period = time.substring(time.length - 2);
+    final hour = time.substring(
+      0,
+      time.length - 2,
+    );
+    final period = time.substring(
+      time.length - 2,
+    );
 
-    return Column(
-      children: [
-        if (isFirst)
-          Column(
-            children: [
-              Container(
-                width: 4,
-                height: 100,
-                color: AppColors.infoLight,
-              ),
-              Container(
-                width: 24,
-                height: 24,
-                decoration: BoxDecoration(
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 22,
+      ),
+      child: Column(
+        children: [
+          if (isFirst)
+            Column(
+              children: [
+                Container(
+                  width: 4,
+                  height: 100,
                   color: AppColors.infoLight,
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: Colors.white,
-                    width: 5,
-                  ),
                 ),
-              ),
-              RichText(
-                text: TextSpan(
-                  style: const TextStyle(
-                    fontFamily: "Poppins",
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  ),
-                  children: [
-                    TextSpan(text: hour),
-                    TextSpan(
-                      text: period,
-                      style: const TextStyle(
-                        fontSize: 12,
-                      ),
+                Container(
+                  width: 24,
+                  height: 24,
+                  decoration: BoxDecoration(
+                    color: AppColors.infoLight,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 5,
                     ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        if (!isFirst && !isLast)
-          Column(
-            children: [
-              Container(
-                width: 4,
-                height: 100,
-                color: Colors.grey,
-              ),
-              Container(
-                width: 24,
-                height: 24,
-                decoration: const BoxDecoration(
-                  color: Colors.blue,
-                  shape: BoxShape.circle,
-                ),
-              ),
-              RichText(
-                text: TextSpan(
-                  style: const TextStyle(
-                    fontFamily: "Poppins",
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
                   ),
-                  children: [
-                    TextSpan(text: hour),
-                    TextSpan(
-                      text: period,
-                      style: const TextStyle(
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
                 ),
-              ),
-            ],
-          ),
-        if (isLast)
-          Column(
-            children: [
-              Container(
-                width: 4,
-                height: 100,
-                color: AppColors.greyLight,
-              ),
-              Container(
-                width: 24,
-                height: 24,
-                decoration: BoxDecoration(
+                RichText(
+                  text: TextSpan(
+                    style: const TextStyle(
+                      fontFamily: "Poppins",
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
+                    ),
+                    children: [
+                      TextSpan(text: hour),
+                      TextSpan(
+                        text: period,
+                        style: const TextStyle(
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          if (!isFirst && !isLast)
+            Column(
+              children: [
+                Container(
+                  width: 4,
+                  height: 100,
+                  color: Colors.grey,
+                ),
+                Container(
+                  width: 24,
+                  height: 24,
+                  decoration: const BoxDecoration(
+                    color: Colors.blue,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                RichText(
+                  text: TextSpan(
+                    style: const TextStyle(
+                      fontFamily: "Poppins",
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
+                    ),
+                    children: [
+                      TextSpan(text: hour),
+                      TextSpan(
+                        text: period,
+                        style: const TextStyle(
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          if (isLast)
+            Column(
+              children: [
+                Container(
+                  width: 4,
+                  height: 100,
                   color: AppColors.greyLight,
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: Colors.white,
-                    width: 5,
+                ),
+                Container(
+                  width: 24,
+                  height: 24,
+                  decoration: BoxDecoration(
+                    color: AppColors.greyLight,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 5,
+                    ),
                   ),
                 ),
-              ),
-              RichText(
-                text: TextSpan(
-                  style: const TextStyle(
-                    fontFamily: "Poppins",
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  ),
-                  children: [
-                    TextSpan(
-                      text: hour,
+                RichText(
+                  text: TextSpan(
+                    style: const TextStyle(
+                      fontFamily: "Poppins",
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
                     ),
-                    TextSpan(
-                      text: period,
-                      style: const TextStyle(
-                        fontSize: 12,
+                    children: [
+                      TextSpan(
+                        text: hour,
                       ),
-                    ),
-                  ],
+                      TextSpan(
+                        text: period,
+                        style: const TextStyle(
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-      ],
+              ],
+            ),
+        ],
+      ),
     );
   }
 }

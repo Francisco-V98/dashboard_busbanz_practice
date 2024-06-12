@@ -39,6 +39,11 @@ class _Body extends StatelessWidget {
           subTitle: 'Animation Circle',
           location: '/animationCircle',
         ),
+        _CustomListTile(
+          title: 'Principal Page',
+          subTitle: 'Principal Page',
+          location: '/principalPage',
+        ),
       ],
     );
   }
