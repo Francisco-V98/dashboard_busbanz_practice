@@ -57,7 +57,7 @@ class PrincipalPage extends StatelessWidget {
                 const Positioned(
                   width: 312,
                   right: 25,
-                  top: 540,
+                  top: 535,
                   child: CardDefault(
                     textLeft: "textLeft",
                     textRight: "textRight",
