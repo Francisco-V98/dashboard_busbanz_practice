@@ -136,7 +136,9 @@ class TimeLineHeader extends StatelessWidget {
                     Text(
                       'Mazda CX30',
                       style: TextStyle(
-                        color: Colors.grey,
+                        fontFamily: "Poppins",
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.greyLight,
                         fontSize: 16.0,
                       ),
                     ),

@@ -59,9 +59,9 @@ class PrincipalPage extends StatelessWidget {
                   right: 25,
                   top: 540,
                   child: CardDefault(
-                    textLeft: "textLeft",
-                    textRight: "textRight",
-                    textbuttom: "textbuttom",
+                    textLeft: "Colegio",
+                    textRight: "Estudiantes",
+                    textbuttom: "Ruta AB32-5",
                   ),
                 )
               ],
