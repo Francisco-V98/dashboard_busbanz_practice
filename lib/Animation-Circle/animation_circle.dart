@@ -58,40 +58,35 @@ class _AnimationCircleState extends State<AnimationCircle>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.yellow,
-      body: Center(
-        child: AnimatedBuilder(
-          animation: _animation,
-          builder: (context, child) {
-            double outerRadius = 70 - 40 * _animation.value;
-            double innerRadius = 30 + 40 * _animation.value;
-            return Stack(
-              alignment: Alignment.center,
-              children: [
-                Container(
-                  width: outerRadius * 2,
-                  height: outerRadius * 2,
-                  decoration: BoxDecoration(
-                    color: AppColors.secondary.withOpacity(
-                      0.2,
-                    ),
-                    shape: BoxShape.circle,
-                  ),
+    return AnimatedBuilder(
+      animation: _animation,
+      builder: (context, child) {
+        double outerRadius = 70 - 40 * _animation.value;
+        double innerRadius = 30 + 40 * _animation.value;
+        return Stack(
+          alignment: Alignment.center,
+          children: [
+            Container(
+              width: outerRadius * 2,
+              height: outerRadius * 2,
+              decoration: BoxDecoration(
+                color: AppColors.secondary.withOpacity(
+                  0.2,
                 ),
-                Container(
-                  width: innerRadius * 1,
-                  height: innerRadius * 2,
-                  decoration: const BoxDecoration(
-                    color: AppColors.secondary,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-              ],
-            );
-          },
-        ),
-      ),
+                shape: BoxShape.circle,
+              ),
+            ),
+            Container(
+              width: innerRadius * 1,
+              height: innerRadius * 2,
+              decoration: const BoxDecoration(
+                color: AppColors.secondary,
+                shape: BoxShape.circle,
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 }
