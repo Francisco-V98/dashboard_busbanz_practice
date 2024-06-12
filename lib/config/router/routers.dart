@@ -24,6 +24,10 @@ final appRouterProvider = Provider<GoRouter>(
           path: '/timeLine',
           builder: (context, state) => const TimeLine(),
         ),
+        GoRoute(
+          path: '/card-default',
+          builder: (context, state) => const CardDefaultScreen(),
+        ),
       ],
     );
   },

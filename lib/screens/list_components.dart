@@ -34,6 +34,11 @@ class _Body extends StatelessWidget {
           subTitle: 'Componente TimeLine Dashboard',
           location: '/timeLine',
         ),
+        _CustomListTile(
+          title: 'Card-Default Dashboard',
+          subTitle: 'Componente card-defaults',
+          location: '/card-default',
+        ),
       ],
     );
   }
