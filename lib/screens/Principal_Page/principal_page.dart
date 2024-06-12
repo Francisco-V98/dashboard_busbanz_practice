@@ -45,9 +45,25 @@ class PrincipalPage extends StatelessWidget {
                   child: TimeLine(),
                 ),
                 const Positioned(
+                  top: 365,
+                  right: 25,
+                  width: 312,
+                  child: CardActiveRoute(),
+                ),
+                const Positioned(
                   top: 252,
                   child: TimeLineHeader(),
                 ),
+                const Positioned(
+                  width: 312,
+                  right: 25,
+                  top: 540,
+                  child: CardDefault(
+                    textLeft: "textLeft",
+                    textRight: "textRight",
+                    textbuttom: "textbuttom",
+                  ),
+                )
               ],
             ),
           ),

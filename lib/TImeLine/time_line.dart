@@ -49,7 +49,7 @@ class TimeLineEvent extends StatelessWidget {
               children: [
                 Container(
                   width: 4,
-                  height: 100,
+                  height: 93,
                   color: AppColors.infoLight,
                 ),
                 Container(
@@ -90,7 +90,7 @@ class TimeLineEvent extends StatelessWidget {
               children: [
                 Container(
                   width: 4,
-                  height: 100,
+                  height: 95,
                   color: Colors.grey,
                 ),
                 Container(
@@ -127,7 +127,7 @@ class TimeLineEvent extends StatelessWidget {
               children: [
                 Container(
                   width: 4,
-                  height: 100,
+                  height: 85,
                   color: AppColors.greyLight,
                 ),
                 Container(
