@@ -90,7 +90,7 @@ class TimeLineEvent extends StatelessWidget {
               children: [
                 Container(
                   width: 4,
-                  height: 95,
+                  height: 88,
                   color: Colors.grey,
                 ),
                 Container(
@@ -148,7 +148,7 @@ class TimeLineEvent extends StatelessWidget {
                       fontFamily: "Poppins",
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
-                      color: Colors.black,
+                      color: Color.fromARGB(255, 128, 131, 133),
                     ),
                     children: [
                       TextSpan(
