@@ -1,8 +1,7 @@
-import 'package:dashboard_busbanz_practice/TImeLine/time_line.dart';
-import 'package:dashboard_busbanz_practice/TimeLine-Header/time_line_header.dart';
+import 'package:dashboard_busbanz_practice/widgets/TImeLine_Container/time_line.dart';
+import 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/time_line_header_container.dart';
 import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
 import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -35,7 +34,7 @@ class PrincipalPage extends StatelessWidget {
                 ),
                  SizedBox(
                   height: size.height * 0.14,
-                  child: Center(
+                  child: const Center(
                     child: AppBarBusbanz(
                       title: "Hola, Freddy",
                       image: "assets/images/imagen_de_conductor.png",

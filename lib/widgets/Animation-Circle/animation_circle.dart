@@ -1,4 +1,5 @@
 import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
+import 'package:dashboard_busbanz_practice/widgets/Animation-Circle/Circle-Content/circle_content.dart';
 import 'package:flutter/material.dart';
 
 class AnimationCircle extends StatefulWidget {
@@ -65,28 +66,9 @@ class _AnimationCircleState extends State<AnimationCircle>
       builder: (context, child) {
         double outerRadius = 70 - 40 * _animation.value;
         double innerRadius = 30 + 40 * _animation.value;
-        return Stack(
-          alignment: Alignment.center,
-          children: [
-            Container(
-              width: outerRadius * 2,
-              height: outerRadius * 2,
-              decoration: BoxDecoration(
-                color: AppColors.secondary.withOpacity(
-                  0.2,
-                ),
-                shape: BoxShape.circle,
-              ),
-            ),
-            Container(
-              width: innerRadius * 1,
-              height: innerRadius * 2,
-              decoration: const BoxDecoration(
-                color: AppColors.secondary,
-                shape: BoxShape.circle,
-              ),
-            ),
-          ],
+        return CircleContent(
+          outerRadius: outerRadius,
+          innerRadius: innerRadius,
         );
       },
     );
