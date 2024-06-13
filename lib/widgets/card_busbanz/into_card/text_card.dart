@@ -20,7 +20,7 @@ class TextStyleCard extends StatelessWidget {
         fontFamily: 'Poppins',
         color: color,
         fontWeight: FontWeight.w600,
-        height: 1.16,
+        height: 1.4,
         fontSize: fontsize,
       ),
     );

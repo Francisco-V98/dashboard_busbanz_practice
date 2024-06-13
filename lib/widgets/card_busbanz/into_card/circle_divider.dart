@@ -8,7 +8,14 @@ class CircleDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(6),
-      child: Container(width: 4, height: 4, color: AppColors.black),
+      child: Container(
+        width: 4,
+        height: 4,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+          color: AppColors.black,
+        ),
+      ),
     );
   }
 }

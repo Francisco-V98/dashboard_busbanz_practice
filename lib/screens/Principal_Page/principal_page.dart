@@ -32,7 +32,7 @@ class PrincipalPage extends StatelessWidget {
                   right: 0,
                   child: const CalendarContainerGroup(),
                 ),
-                 SizedBox(
+                SizedBox(
                   height: size.height * 0.14,
                   child: const Center(
                     child: AppBarBusbanz(
@@ -49,7 +49,12 @@ class PrincipalPage extends StatelessWidget {
                   top: size.height * 0.45,
                   right: size.width * 0.07,
                   width: size.width * 0.75,
-                  child: const CardActiveRoute(),
+                  child: const CardActiveRoute(
+                    textLeft: 'Estudiante',
+                    textRight: 'Colegio',
+                    textbuttom: 'Ruta AB32-5',
+                    numberUser: 12,
+                  ),
                 ),
                 Positioned(
                   top: size.height * 0.3,

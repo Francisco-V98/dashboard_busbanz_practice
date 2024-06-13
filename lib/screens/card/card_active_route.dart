@@ -21,18 +21,17 @@ class _Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.all(16),
+      padding: EdgeInsets.all(24),
       child: Column(
         children: [
-          CardActiveRoute(),
+          CardActiveRoute(
+            textLeft: 'Estudiante',
+            textRight: 'Colegio',
+            textbuttom: 'Ruta AB32-5',
+            numberUser: 12,
+          ),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-

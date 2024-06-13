@@ -48,7 +48,7 @@ class CalendarContainer extends StatelessWidget {
                 color: isActive
                     ? AppColors.white.withOpacity(0.5)
                     : AppColors.black.withOpacity(0.5),
-                height: 1.12),
+                height: 1.5),
           ),
           Text(
             date,
@@ -57,7 +57,7 @@ class CalendarContainer extends StatelessWidget {
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
                 color: isActive ? AppColors.white : AppColors.black,
-                height: 1.18),
+                height: 1),
           ),
           Text(
             day,
@@ -65,7 +65,7 @@ class CalendarContainer extends StatelessWidget {
                 fontFamily: 'Poppins',
                 fontSize: 14,
                 color: isActive ? AppColors.white : AppColors.black,
-                height: 1.16),
+                height: 1.2),
           ),
         ],
       ),
