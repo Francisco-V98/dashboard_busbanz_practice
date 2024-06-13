@@ -1,5 +1,6 @@
 import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
 import 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/TimeLine-Header_Content/time_line_header_content.dart';
+import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class TimeLineHeader extends StatelessWidget {
@@ -59,11 +60,9 @@ class TimeLineHeader extends StatelessWidget {
                         fontSize: size.width * 0.045,
                       ),
                     ),
-                    const Text(
-                      ' • ',
-                      style: TextStyle(
-                        color: Colors.grey,
-                      ),
+                    const SizedBox(width: 3,),
+                    const CircleDivider(
+                      color: AppColors.greyLight,
                     ),
                     Text(
                       'Andrea',
@@ -81,27 +80,26 @@ class TimeLineHeader extends StatelessWidget {
                       'Mazda CX30',
                       style: TextStyle(
                         fontFamily: "Poppins",
-                        color: AppColors.greyLight,
+                        color: const Color(0xFF868f98),
                         fontSize: size.width * 0.04,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const Text(
-                      ' • ',
-                      style: TextStyle(
-                        color: AppColors.greyLight,
-                      ),
+                    const CircleDivider(
+                      color: AppColors.greyLight,
                     ),
                     Text(
                       'JWP192',
                       style: TextStyle(
+                        fontFamily: "Poppins",
                         fontWeight: FontWeight.w600,
-                        color: AppColors.greyLight,
+                        color: const Color(0xFF868f98),
                         fontSize: size.width * 0.04,
                       ),
                     ),
                   ],
                 ),
+                S
               ],
             ),
           ],
