@@ -11,6 +11,8 @@ class PrincipalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Scaffold(
       backgroundColor: AppColors.bgBotLight,
       body: Column(
@@ -25,11 +27,11 @@ class PrincipalPage extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
-                const Positioned(
-                  top: 110,
+                Positioned(
+                  top: size.height * 0.13,
                   left: 0,
                   right: 0,
-                  child: CalendarContainerGroup(),
+                  child: const CalendarContainerGroup(),
                 ),
                 const SizedBox(
                   height: 170,
@@ -40,31 +42,30 @@ class PrincipalPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Positioned(
-                  top: 344,
-                  child: TimeLine(),
+                Positioned(
+                  top: size.height * 0.4,
+                  child: const TimeLine(),
                 ),
-                const Positioned(
-                  top: 365,
-                  right: 25,
-                  width: 312,
-                  height: 160,
-                  child: CardActiveRoute(),
+                Positioned(
+                  top: size.height * 0.42,
+                  right: size.width * 0.09,
+                  width: size.width * 0.75,
+                  child: const CardActiveRoute(),
                 ),
-                const Positioned(
-                  top: 252,
-                  child: TimeLineHeader(),
+                Positioned(
+                  top: size.height * 0.3,
+                  child: const TimeLineHeader(),
                 ),
-                const Positioned(
-                  width: 312,
-                  right: 25,
-                  top: 560,
-                  child: CardDefault(
+                Positioned(
+                  width: size.width * 0.75,
+                  right: size.width * 0.09,
+                  top: size.height * 0.60,
+                  child: const CardDefault(
                     textLeft: "Colegio",
                     textRight: "Estudiantes",
                     textbuttom: "Ruta AB32-5",
                   ),
-                )
+                ),
               ],
             ),
           ),

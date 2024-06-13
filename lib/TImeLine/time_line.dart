@@ -40,7 +40,7 @@ class TimeLineEvent extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 22,
+        horizontal: 10,
       ),
       child: Column(
         children: [
@@ -49,7 +49,7 @@ class TimeLineEvent extends StatelessWidget {
               children: [
                 Container(
                   width: 4,
-                  height: 93,
+                  height: 75,
                   color: AppColors.infoLight,
                 ),
                 Container(
@@ -127,7 +127,7 @@ class TimeLineEvent extends StatelessWidget {
               children: [
                 Container(
                   width: 4,
-                  height: 85,
+                  height: 75,
                   color: AppColors.greyLight,
                 ),
                 Container(

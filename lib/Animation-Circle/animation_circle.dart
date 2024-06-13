@@ -37,7 +37,9 @@ class _AnimationCircleState extends State<AnimationCircle>
   void _startAnimation() async {
     while (true) {
       await _controller.forward();
-      _controller.duration = const Duration(milliseconds: 450);
+      _controller.duration = const Duration(
+        milliseconds: 450,
+      );
       await _controller.reverse();
       _controller.duration = const Duration(
         milliseconds: 300,
