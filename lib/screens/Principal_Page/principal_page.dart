@@ -33,8 +33,8 @@ class PrincipalPage extends StatelessWidget {
                   right: 0,
                   child: const CalendarContainerGroup(),
                 ),
-                const SizedBox(
-                  height: 170,
+                 SizedBox(
+                  height: size.height * 0.14,
                   child: Center(
                     child: AppBarBusbanz(
                       title: "Hola, Freddy",
@@ -47,8 +47,8 @@ class PrincipalPage extends StatelessWidget {
                   child: const TimeLine(),
                 ),
                 Positioned(
-                  top: size.height * 0.42,
-                  right: size.width * 0.09,
+                  top: size.height * 0.45,
+                  right: size.width * 0.07,
                   width: size.width * 0.75,
                   child: const CardActiveRoute(),
                 ),
@@ -58,8 +58,8 @@ class PrincipalPage extends StatelessWidget {
                 ),
                 Positioned(
                   width: size.width * 0.75,
-                  right: size.width * 0.09,
-                  top: size.height * 0.60,
+                  right: size.width * 0.07,
+                  top: size.height * 0.67,
                   child: const CardDefault(
                     textLeft: "Colegio",
                     textRight: "Estudiantes",

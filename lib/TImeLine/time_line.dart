@@ -30,45 +30,44 @@ class TimeLineEvent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final hour = time.substring(
-      0,
-      time.length - 2,
-    );
-    final period = time.substring(
-      time.length - 2,
-    );
+    final size = MediaQuery.of(context).size;
+    final double circleSize = size.width * 0.06;
+    final double lineWidth = size.width * 0.01;
+    final double paddingHorizontal = size.width * 0.025;
+    final double verticalLineHeight = size.height * 0.13;
+
+    final hour = time.substring(0, time.length - 2);
+    final period = time.substring(time.length - 2);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 10,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: paddingHorizontal),
       child: Column(
         children: [
           if (isFirst)
             Column(
               children: [
                 Container(
-                  width: 4,
-                  height: 75,
+                  width: lineWidth,
+                  height: verticalLineHeight,
                   color: AppColors.infoLight,
                 ),
                 Container(
-                  width: 24,
-                  height: 24,
+                  width: circleSize,
+                  height: circleSize,
                   decoration: BoxDecoration(
                     color: AppColors.infoLight,
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: AppColors.bgBotLight,
-                      width: 5,
+                      width: lineWidth,
                     ),
                   ),
                 ),
                 RichText(
                   text: TextSpan(
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontFamily: "Poppins",
-                      fontSize: 16,
+                      fontSize: size.width * 0.04,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                     ),
@@ -76,8 +75,8 @@ class TimeLineEvent extends StatelessWidget {
                       TextSpan(text: hour),
                       TextSpan(
                         text: period,
-                        style: const TextStyle(
-                          fontSize: 12,
+                        style: TextStyle(
+                          fontSize: size.width * 0.03,
                         ),
                       ),
                     ],
@@ -89,13 +88,13 @@ class TimeLineEvent extends StatelessWidget {
             Column(
               children: [
                 Container(
-                  width: 4,
-                  height: 88,
+                  width: lineWidth,
+                  height: verticalLineHeight * 1.2,
                   color: Colors.grey,
                 ),
                 Container(
-                  width: 24,
-                  height: 24,
+                  width: circleSize,
+                  height: circleSize,
                   decoration: const BoxDecoration(
                     color: Colors.blue,
                     shape: BoxShape.circle,
@@ -103,9 +102,9 @@ class TimeLineEvent extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontFamily: "Poppins",
-                      fontSize: 16,
+                      fontSize: size.width * 0.04,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                     ),
@@ -113,8 +112,8 @@ class TimeLineEvent extends StatelessWidget {
                       TextSpan(text: hour),
                       TextSpan(
                         text: period,
-                        style: const TextStyle(
-                          fontSize: 12,
+                        style: TextStyle(
+                          fontSize: size.width * 0.03,
                         ),
                       ),
                     ],
@@ -126,38 +125,36 @@ class TimeLineEvent extends StatelessWidget {
             Column(
               children: [
                 Container(
-                  width: 4,
-                  height: 75,
+                  width: lineWidth,
+                  height: verticalLineHeight,
                   color: AppColors.greyLight,
                 ),
                 Container(
-                  width: 24,
-                  height: 24,
+                  width: circleSize,
+                  height: circleSize,
                   decoration: BoxDecoration(
                     color: AppColors.greyLight,
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: AppColors.bgBotLight,
-                      width: 5,
+                      width: lineWidth,
                     ),
                   ),
                 ),
                 RichText(
                   text: TextSpan(
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontFamily: "Poppins",
-                      fontSize: 16,
+                      fontSize: size.width * 0.04,
                       fontWeight: FontWeight.w500,
                       color: Color.fromARGB(255, 128, 131, 133),
                     ),
                     children: [
-                      TextSpan(
-                        text: hour,
-                      ),
+                      TextSpan(text: hour),
                       TextSpan(
                         text: period,
-                        style: const TextStyle(
-                          fontSize: 12,
+                        style: TextStyle(
+                          fontSize: size.width * 0.03,
                         ),
                       ),
                     ],
