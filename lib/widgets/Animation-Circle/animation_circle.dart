@@ -1,5 +1,6 @@
-import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
+import 'package:dashboard_busbanz_practice/widgets/Animation-Circle/Circle-Content/circle_content.dart';
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 class AnimationCircle extends StatefulWidget {
   const AnimationCircle({Key? key}) : super(key: key);
@@ -12,12 +13,15 @@ class _AnimationCircleState extends State<AnimationCircle>
     with TickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
+  Timer? _timer;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 275),
+      duration: const Duration(
+        milliseconds: 250,
+      ),
       vsync: this,
     );
 
@@ -34,64 +38,44 @@ class _AnimationCircleState extends State<AnimationCircle>
     _startAnimation();
   }
 
-  void _startAnimation() async {
-    while (true) {
+  void _startAnimation() {
+    _timer = Timer.periodic(const Duration(milliseconds: 1775), (timer) async {
+      if (!mounted) return;
       await _controller.forward();
+      if (!mounted) return;
       _controller.duration = const Duration(milliseconds: 450);
       await _controller.reverse();
-      _controller.duration = const Duration(
-        milliseconds: 300,
-      );
-      await Future.delayed(
-        const Duration(
-          milliseconds: 750,
-        ),
-      );
-    }
+      if (!mounted) return;
+      _controller.duration = const Duration(milliseconds: 300);
+    });
   }
 
   @override
   void dispose() {
+    _timer?.cancel();
     _controller.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.yellow,
-      body: Center(
-        child: AnimatedBuilder(
-          animation: _animation,
-          builder: (context, child) {
-            double outerRadius = 70 - 40 * _animation.value;
-            double innerRadius = 30 + 40 * _animation.value;
-            return Stack(
-              alignment: Alignment.center,
-              children: [
-                Container(
-                  width: outerRadius * 2,
-                  height: outerRadius * 2,
-                  decoration: BoxDecoration(
-                    color: AppColors.secondary.withOpacity(
-                      0.2,
-                    ),
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                Container(
-                  width: innerRadius * 1,
-                  height: innerRadius * 2,
-                  decoration: const BoxDecoration(
-                    color: AppColors.secondary,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-              ],
-            );
-          },
-        ),
-      ),
+    const double maxOuterRadius = 70.0;
+    const double minOuterRadius = 30.0;
+    const double maxInnerRadius = 70.0;
+    const double minInnerRadius = 20.0;
+
+    return AnimatedBuilder(
+      animation: _animation,
+      builder: (context, child) {
+        double outerRadius = maxOuterRadius -
+            (maxOuterRadius - minOuterRadius) * _animation.value;
+        double innerRadius = minInnerRadius +
+            (maxInnerRadius - minInnerRadius) * _animation.value;
+        return CircleContent(
+          outerRadius: outerRadius,
+          innerRadius: innerRadius,
+        );
+      },
     );
   }
 }

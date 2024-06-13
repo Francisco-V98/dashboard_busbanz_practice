@@ -9,7 +9,8 @@ class CircleAvatarCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(shape: BoxShape.circle, boxShadow: [
+      decoration: const BoxDecoration(
+        shape: BoxShape.circle, boxShadow: [
         BoxShadow(
           color: AppColors.primary,
           spreadRadius: 3,
