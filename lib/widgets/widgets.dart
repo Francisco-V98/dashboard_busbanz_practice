@@ -1,4 +1,4 @@
-export 'package:dashboard_busbanz_practice/Animation-Circle/animation_circle.dart';
+export 'package:dashboard_busbanz_practice/widgets/Animation-Circle/animation_circle.dart';
 
 export 'package:dashboard_busbanz_practice/widgets/card_busbanz/card_active_route.dart';
 
@@ -17,3 +17,11 @@ export 'package:dashboard_busbanz_practice/widgets/app_bar_busbanz/app_bar_busba
 export 'package:dashboard_busbanz_practice/widgets/calendar_container/calendar_container_group.dart';
 
 export 'package:dashboard_busbanz_practice/widgets/calendar_container/calendar_container.dart';
+
+export 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/design_containers_images/container_image_car.dart';
+
+export 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/design_containers_images/container_image_client.dart';
+
+export 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/design_containers_images/container_image_driver.dart';
+
+export 'package:flutter/material.dart';

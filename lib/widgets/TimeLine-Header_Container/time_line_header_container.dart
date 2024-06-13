@@ -1,4 +1,5 @@
 import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
+import 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/TimeLine-Header_Content/time_line_header_content.dart';
 import 'package:flutter/material.dart';
 
 class TimeLineHeader extends StatelessWidget {
@@ -16,8 +17,12 @@ class TimeLineHeader extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
-          topRight: Radius.circular(size.width * 0.05),
-          bottomRight: Radius.circular(size.width * 0.05),
+          topRight: Radius.circular(
+            size.width * 0.05,
+          ),
+          bottomRight: Radius.circular(
+            size.width * 0.05,
+          ),
         ),
         boxShadow: [
           BoxShadow(
@@ -31,73 +36,14 @@ class TimeLineHeader extends StatelessWidget {
         width: size.width * 0.85,
         child: Row(
           children: [
-            Stack(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(left: spacing * 2),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30.0),
-                    border: Border.all(
-                      color: Colors.white,
-                      width: borderWidth,
-                    ),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(30.0),
-                      bottomRight: Radius.circular(30.0),
-                    ),
-                    child: CircleAvatar(
-                      backgroundImage:
-                          AssetImage('assets/images/imagen_de_andrea.png'),
-                      radius: avatarRadius,
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(left: spacing),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30.0),
-                    border: Border.all(
-                      color: Colors.white,
-                      width: borderWidth,
-                    ),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(30.0),
-                      bottomRight: Radius.circular(30.0),
-                    ),
-                    child: CircleAvatar(
-                      backgroundImage:
-                          AssetImage('assets/images/imagen_de_conductor.png'),
-                      radius: avatarRadius,
-                    ),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30.0),
-                    border: Border.all(
-                      color: Colors.white,
-                      width: borderWidth,
-                    ),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30.0),
-                      bottomLeft: Radius.circular(30.0),
-                    ),
-                    child: CircleAvatar(
-                      backgroundImage:
-                          AssetImage('assets/images/imagen_de_carro.png'),
-                      radius: avatarRadius,
-                    ),
-                  ),
-                ),
-              ],
+            TimeLineHeaderContent(
+              spacing: spacing,
+              borderWidth: borderWidth,
+              avatarRadius: avatarRadius,
             ),
-            SizedBox(width: size.width * 0.05),
+            SizedBox(
+              width: size.width * 0.05,
+            ),
             Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -113,7 +59,7 @@ class TimeLineHeader extends StatelessWidget {
                         fontSize: size.width * 0.045,
                       ),
                     ),
-                    Text(
+                    const Text(
                       ' • ',
                       style: TextStyle(
                         color: Colors.grey,
@@ -140,7 +86,7 @@ class TimeLineHeader extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    Text(
+                    const Text(
                       ' • ',
                       style: TextStyle(
                         color: AppColors.greyLight,

@@ -1,8 +1,8 @@
-import 'package:dashboard_busbanz_practice/TImeLine/time_line.dart';
-import 'package:dashboard_busbanz_practice/TimeLine-Header/time_line_header.dart';
+import 'package:dashboard_busbanz_practice/screens/Animation-Screen/animation_circle_screen.dart';
+import 'package:dashboard_busbanz_practice/screens/TimeLine-Header/time_line_header.dart';
+import 'package:dashboard_busbanz_practice/screens/TimeLine/time_line_screen.dart';
 import 'package:dashboard_busbanz_practice/screens/Principal_Page/principal_page.dart';
 import 'package:dashboard_busbanz_practice/screens/screens.dart';
-import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -20,11 +20,11 @@ final appRouterProvider = Provider<GoRouter>(
         ),
         GoRoute(
           path: '/timeLineHeader',
-          builder: (context, state) => const TimeLineHeader(),
+          builder: (context, state) => const TimeLineHeaderScreen(),
         ),
         GoRoute(
           path: '/timeLine',
-          builder: (context, state) => const TimeLine(),
+          builder: (context, state) => const TimeLineScreen(),
         ),
         GoRoute(
           path: '/card-default',
@@ -40,7 +40,7 @@ final appRouterProvider = Provider<GoRouter>(
         ),
         GoRoute(
           path: '/animationCircle',
-          builder: (context, state) => const AnimationCircle(),
+          builder: (context, state) => const AnimationCircleScreen(),
         ),
       ],
     );
