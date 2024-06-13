@@ -182,7 +182,7 @@ class CircleUserNumberCount extends StatelessWidget {
                 height: 0.5,
                 foreground: Paint()
                   ..style = PaintingStyle.stroke
-                  ..strokeWidth = 5
+                  ..strokeWidth = 3
                   ..color = AppColors.primary),
           ),
         ),
