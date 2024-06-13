@@ -2,7 +2,8 @@ import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CircleDivider extends StatelessWidget {
-  const CircleDivider({super.key});
+  final Color color;
+  const CircleDivider({super.key, this.color = AppColors.black});
 
   @override
   Widget build(BuildContext context) {
@@ -11,9 +12,9 @@ class CircleDivider extends StatelessWidget {
       child: Container(
         width: 4,
         height: 4,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: AppColors.black,
+          color: color,
         ),
       ),
     );
