@@ -17,14 +17,19 @@ class TimeLineHeaderContent extends StatelessWidget {
     return Stack(
       children: [
         ContainerImageClient(
-            spacing: spacing,
-            borderWidth: borderWidth,
-            avatarRadius: avatarRadius),
+          spacing: spacing,
+          borderWidth: borderWidth,
+          avatarRadius: avatarRadius,
+        ),
         ContainerImageDriver(
-            spacing: spacing,
-            borderWidth: borderWidth,
-            avatarRadius: avatarRadius),
-        ContainerImageCar(borderWidth: borderWidth, avatarRadius: avatarRadius),
+          spacing: spacing,
+          borderWidth: borderWidth,
+          avatarRadius: avatarRadius,
+        ),
+        ContainerImageCar(
+          borderWidth: borderWidth,
+          avatarRadius: avatarRadius,
+        ),
       ],
     );
   }
