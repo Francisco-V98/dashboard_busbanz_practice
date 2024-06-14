@@ -8,9 +8,18 @@ class AnimationCircleScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Animation Circle'), centerTitle: true),
       backgroundColor: AppColors.bgBotLight,
-      body: const Center(
-        child: AnimationCircle(),
-      ),
+      body: const _Body(),
+    );
+  }
+}
+
+class _Body extends StatelessWidget {
+  const _Body();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: AnimationCircle(),
     );
   }
 }

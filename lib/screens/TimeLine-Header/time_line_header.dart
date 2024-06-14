@@ -6,11 +6,25 @@ class TimeLineHeaderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Time Line Header'), centerTitle: true),
-      backgroundColor: AppColors.bgBotLight,
-      body: const Center(
-        child: TimeLineHeader(),
+      appBar: AppBar(
+        title: const Text(
+          'Time Line Header',
+        ),
+        centerTitle: true,
       ),
+      backgroundColor: AppColors.bgBotLight,
+      body: const _Body(),
+    );
+  }
+}
+
+class _Body extends StatelessWidget {
+  const _Body();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: TimeLineHeader(),
     );
   }
 }

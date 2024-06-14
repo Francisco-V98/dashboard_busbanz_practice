@@ -7,9 +7,18 @@ class TimeLineScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Time Line'), centerTitle: true),
-      body: const Center(
-        child: TimeLine(),
-      ),
+      body: const _Body(),
+    );
+  }
+}
+
+class _Body extends StatelessWidget {
+  const _Body();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: TimeLine(),
     );
   }
 }
