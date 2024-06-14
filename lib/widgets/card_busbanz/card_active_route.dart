@@ -1,4 +1,3 @@
-import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
 import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
 
 class CardActiveRoute extends StatelessWidget {
@@ -40,25 +39,11 @@ class CardActiveRoute extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          TextStyleCard(text: textLeft),
-                          const CircleDivider(),
-                          TextStyleCard(text: textRight),
-                        ],
-                      ),
-                      TextStyleCard(
-                        text: textbuttom,
-                        color: AppColors.black.withOpacity(0.5),
-                        fontsize: 11,
-                      ),
-                      const Spacer(),
-                      UserImageGroup(numberUser: numberUser),
-                    ],
-                  ),
+                  child: TextAndCircleData(
+                      textLeft: textLeft,
+                      textRight: textRight,
+                      textbuttom: textbuttom,
+                      numberUser: numberUser),
                 ),
                 const Positioned(
                   right: 0,
@@ -108,98 +93,6 @@ class _InsideShadow extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class UserImageGroup extends StatelessWidget {
-  const UserImageGroup({
-    super.key,
-    required this.numberUser,
-  });
-
-  final int numberUser;
-
-  @override
-  Widget build(BuildContext context) {
-    const double circleSize = 24 - 4;
-
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
-      children: [
-        const SizedBox(
-          width: (24*4)-(12),
-          child: Stack(
-            children: [
-              CircleAvatarCard(),
-              Positioned(
-                left: circleSize,
-                child: CircleAvatarCard(),
-              ),
-              Positioned(
-                left: 2 * circleSize,
-                child: CircleAvatarCard(),
-              ),
-              Positioned(
-                left: 3 * circleSize,
-                child: CircleAvatarCard(),
-              ),
-            ],
-          ),
-        ),
-        CircleUserNumberCount(numberUser: numberUser),
-      ],
-    );
-  }
-}
-
-class CircleUserNumberCount extends StatelessWidget {
-  const CircleUserNumberCount({
-    super.key,
-    required this.numberUser,
-  });
-
-  final int numberUser;
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Positioned(
-          bottom: 0,
-          right: 0,
-          child: UsersCountCard(numberUser: numberUser),
-        ),
-        SizedBox(
-          width: 28,
-          height: 28,
-          child: Text(
-            '+',
-            style: TextStyle(
-                fontWeight: FontWeight.w500,
-                fontSize: 24,
-                // color: AppColors.white,
-                height: 0.5,
-                foreground: Paint()
-                  ..style = PaintingStyle.stroke
-                  ..strokeWidth = 3
-                  ..color = AppColors.primary),
-          ),
-        ),
-        const SizedBox(
-          width: 28,
-          height: 28,
-          child: Text(
-            '+',
-            style: TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 24,
-              color: AppColors.secondary,
-              height: 0.5,
-            ),
-          ),
-        ),
-      ],
     );
   }
 }

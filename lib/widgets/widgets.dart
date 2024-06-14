@@ -1,8 +1,12 @@
+export 'package:dashboard_busbanz_practice/widgets/card_busbanz/into_card/text_and_circle_data.dart';
+
+export 'package:dashboard_busbanz_practice/widgets/card_busbanz/into_card/circle_avartar_group.dart';
+
 export 'package:dashboard_busbanz_practice/widgets/Animation-Circle/animation_circle.dart';
 
 export 'package:dashboard_busbanz_practice/widgets/card_busbanz/card_active_route.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/card_busbanz/into_card/circle_users_count.dart';
+export 'package:dashboard_busbanz_practice/widgets/card_busbanz/into_card/circle_users_number_count.dart';
 
 export 'package:dashboard_busbanz_practice/widgets/card_busbanz/into_card/circle_avatar.dart';
 
