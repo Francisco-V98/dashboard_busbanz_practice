@@ -1,13 +1,13 @@
-import 'package:dashboard_busbanz_practice/widgets/TImeLine_Container/time_line.dart';
-import 'package:flutter/material.dart';
+import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
 
 class TimeLineScreen extends StatelessWidget {
   const TimeLineScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    return Scaffold(
+      appBar: AppBar(title: const Text('Time Line'), centerTitle: true),
+      body: const Center(
         child: TimeLine(),
       ),
     );

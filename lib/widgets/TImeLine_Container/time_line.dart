@@ -1,6 +1,5 @@
-import 'package:dashboard_busbanz_practice/widgets/TImeLine_Container/TimeLine_Design_Container/time_line_active.dart';
-import 'package:dashboard_busbanz_practice/widgets/TImeLine_Container/TimeLine_Design_Container/time_line_off.dart';
-import 'package:flutter/material.dart';
+import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
+
 
 class TimeLine extends StatelessWidget {
   const TimeLine({super.key});

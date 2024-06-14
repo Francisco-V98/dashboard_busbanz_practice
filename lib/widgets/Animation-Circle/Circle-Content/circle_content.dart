@@ -1,6 +1,4 @@
-import 'package:dashboard_busbanz_practice/widgets/Animation-Circle/Circle-Content/Circle-container/container_radius_circle.dart';
-import 'package:dashboard_busbanz_practice/widgets/Animation-Circle/Circle-Content/Circle-container/container_small_circle.dart';
-import 'package:flutter/material.dart';
+import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
 
 class CircleContent extends StatelessWidget {
   const CircleContent({

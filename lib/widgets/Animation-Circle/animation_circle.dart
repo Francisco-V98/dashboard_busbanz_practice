@@ -1,11 +1,10 @@
-import 'package:dashboard_busbanz_practice/widgets/Animation-Circle/Circle-Content/circle_content.dart';
-import 'package:flutter/material.dart';
-import 'dart:async';
+import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
 
 class AnimationCircle extends StatefulWidget {
   const AnimationCircle({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _AnimationCircleState createState() => _AnimationCircleState();
 }
 
@@ -39,14 +38,21 @@ class _AnimationCircleState extends State<AnimationCircle>
   }
 
   void _startAnimation() {
-    _timer = Timer.periodic(const Duration(milliseconds: 1775), (timer) async {
+    _timer = Timer.periodic(
+        const Duration(
+          milliseconds: 1775,
+        ), (timer) async {
       if (!mounted) return;
       await _controller.forward();
       if (!mounted) return;
-      _controller.duration = const Duration(milliseconds: 450);
+      _controller.duration = const Duration(
+        milliseconds: 450,
+      );
       await _controller.reverse();
       if (!mounted) return;
-      _controller.duration = const Duration(milliseconds: 300);
+      _controller.duration = const Duration(
+        milliseconds: 300,
+      );
     });
   }
 

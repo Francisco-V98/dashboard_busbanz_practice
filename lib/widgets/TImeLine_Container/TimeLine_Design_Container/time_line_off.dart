@@ -1,5 +1,4 @@
-import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
-import 'package:flutter/material.dart';
+import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
 
 class TImeLineOff extends StatelessWidget {
   const TImeLineOff({

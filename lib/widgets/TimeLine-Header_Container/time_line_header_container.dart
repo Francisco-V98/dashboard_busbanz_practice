@@ -1,10 +1,7 @@
-import 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
-import 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/TimeLine-Header_Content/time_line_header_content.dart';
 import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
-import 'package:flutter/material.dart';
 
 class TimeLineHeader extends StatelessWidget {
-  const TimeLineHeader({Key? key}) : super(key: key);
+  const TimeLineHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -99,7 +96,6 @@ class TimeLineHeader extends StatelessWidget {
                     ),
                   ],
                 ),
-                S
               ],
             ),
           ],
