@@ -20,7 +20,12 @@ class _Body extends StatelessWidget {
     return ListView(
       children: const [
         _CustomListTile(
-          title: 'Calendar / AppBar',
+          title: 'AppBar',
+          subTitle: 'Componente appBar Dashboard',
+          location: '/appBar',
+        ),
+        _CustomListTile(
+          title: 'Calendar',
           subTitle: 'Componente Calendar Dashboard',
           location: '/calendar',
         ),
@@ -42,12 +47,12 @@ class _Body extends StatelessWidget {
         _CustomListTile(
           title: 'Card Default',
           subTitle: 'Card Default components',
-          location: '/card-default',
+          location: '/cardDefault',
         ),
         _CustomListTile(
           title: 'Card Active Route',
           subTitle: 'Card Active Route components',
-          location: '/card-active-route',
+          location: '/cardActiveRoute',
         ),
         _CustomListTile(
           title: 'Principal Page',
