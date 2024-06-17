@@ -31,22 +31,19 @@ class TimeLineEvent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final double circleSize = size.width * 0.06;
-    final double lineWidth = size.width * 0.01;
-    final double paddingHorizontal = size.width * 0.025;
-    final double verticalLineHeight = size.height * 0.13;
+    const double circleSize = 24;
 
     final hour = time.substring(0, time.length - 2);
     final period = time.substring(time.length - 2);
 
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: paddingHorizontal),
+      padding: const EdgeInsets.symmetric(horizontal: 11),
       child: Column(
         children: [
           if (isFirst)
             TimeLineActive(
-              lineWidth: lineWidth,
-              verticalLineHeight: verticalLineHeight,
+              lineWidth: 4,
+              verticalLineHeight: 70,
               circleSize: circleSize,
               size: size,
               hour: hour,
@@ -54,8 +51,8 @@ class TimeLineEvent extends StatelessWidget {
             ),
           if (isLast)
             TImeLineOff(
-              lineWidth: lineWidth,
-              verticalLineHeight: verticalLineHeight,
+              lineWidth: 4,
+              verticalLineHeight: 70,
               circleSize: circleSize,
               size: size,
               hour: hour,
