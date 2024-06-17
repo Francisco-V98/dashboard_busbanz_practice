@@ -2,7 +2,7 @@ export 'package:dashboard_busbanz_practice/widgets/card_busbanz/into_card/text_a
 
 export 'package:dashboard_busbanz_practice/widgets/card_busbanz/into_card/circle_avartar_group.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/Animation-Circle/animation_circle.dart';
+export 'package:dashboard_busbanz_practice/widgets/animation_screen/animation_circle.dart';
 
 export 'package:dashboard_busbanz_practice/widgets/card_busbanz/card_active_route.dart';
 
@@ -24,27 +24,27 @@ export 'package:dashboard_busbanz_practice/widgets/calendar_container/calendar_c
 
 export 'package:dashboard_busbanz_practice/config/theme/app_colors.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/design_containers_images/container_image_car.dart';
+export 'package:dashboard_busbanz_practice/widgets/time_line_header_container/design_containers_images/container_image_car.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/design_containers_images/container_image_client.dart';
+export 'package:dashboard_busbanz_practice/widgets/time_line_header_container/design_containers_images/container_image_client.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/design_containers_images/container_image_driver.dart';
+export 'package:dashboard_busbanz_practice/widgets/time_line_header_container/design_containers_images/container_image_driver.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/Animation-Circle/Circle-Content/circle_content.dart';
+export 'package:dashboard_busbanz_practice/widgets/animation_screen/circle_content/circle_content.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/TimeLine-Header_Content/time_line_header_content.dart';
+export 'package:dashboard_busbanz_practice/widgets/time_line_header_container/time_line_header_content/time_line_header_content.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/Animation-Circle/Circle-Content/Circle-container/container_radius_circle.dart';
+export 'package:dashboard_busbanz_practice/widgets/animation_screen/circle_content/circle_container/container_radius_circle.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/Animation-Circle/Circle-Content/Circle-container/container_small_circle.dart';
+export 'package:dashboard_busbanz_practice/widgets/animation_screen/circle_content/circle_container/container_small_circle.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/TImeLine_Container/TimeLine_Design_Container/time_line_active.dart';
+export 'package:dashboard_busbanz_practice/widgets/time_line_container/time_line_design_container/time_line_active.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/TImeLine_Container/TimeLine_Design_Container/time_line_off.dart';
+export 'package:dashboard_busbanz_practice/widgets/time_line_container/time_line_design_container/time_line_off.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/TimeLine-Header_Container/time_line_header_container.dart';
+export 'package:dashboard_busbanz_practice/widgets/time_line_header_container/time_line_header_container.dart';
 
-export 'package:dashboard_busbanz_practice/widgets/TImeLine_Container/time_line.dart';
+export 'package:dashboard_busbanz_practice/widgets/time_line_container/time_line.dart';
 
 export 'dart:async';
 

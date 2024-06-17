@@ -9,7 +9,7 @@ class AnimationCircleScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('Animation Circle'), centerTitle: true),
       backgroundColor: AppColors.bgBotLight,
       body: const Center(
-        child: AnimationCircle(),
+        child: CircleAnimation(),
       ),
     );
   }

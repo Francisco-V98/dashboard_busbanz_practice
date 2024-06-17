@@ -54,7 +54,7 @@ class CardActiveRoute extends StatelessWidget {
                       SizedBox(
                         height: 100,
                         width: 100,
-                        child: AnimationCircle(),
+                        child: CircleAnimation(),
                       ),
                       Icon(Icons.keyboard_arrow_right_outlined)
                     ],

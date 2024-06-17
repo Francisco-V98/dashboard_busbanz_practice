@@ -1,14 +1,14 @@
 import 'package:dashboard_busbanz_practice/widgets/widgets.dart';
 
-class AnimationCircle extends StatefulWidget {
-  const AnimationCircle({Key? key}) : super(key: key);
+class CircleAnimation extends StatefulWidget {
+  const CircleAnimation({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _AnimationCircleState createState() => _AnimationCircleState();
+  _CircleAnimationState createState() => _CircleAnimationState();
 }
 
-class _AnimationCircleState extends State<AnimationCircle>
+class _CircleAnimationState extends State<CircleAnimation>
     with TickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
