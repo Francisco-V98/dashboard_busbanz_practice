@@ -10,7 +10,10 @@ class CalendarContainer extends StatelessWidget {
   const CalendarContainer({
     super.key,
     this.isActive = false,
-    this.isToday = false, required this.month, required this.date, required this.day,
+    this.isToday = false,
+    required this.month,
+    required this.date,
+    required this.day,
   });
 
   @override
