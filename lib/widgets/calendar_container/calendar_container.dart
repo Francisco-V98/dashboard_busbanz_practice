@@ -18,9 +18,11 @@ class CalendarContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const double numContainerSquare = 56;
+    const double numContainerRectangular = 48;
     return Container(
-      width: isToday ? 56 : 48,
-      height: 56,
+      width: isToday ? numContainerSquare : numContainerRectangular,
+      height: numContainerSquare,
       decoration: BoxDecoration(
         color: isActive ? AppColors.secondary : AppColors.bgTopLight,
         borderRadius: BorderRadius.circular(8),
@@ -45,30 +47,33 @@ class CalendarContainer extends StatelessWidget {
           Text(
             month,
             style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 10,
-                fontWeight: FontWeight.w600,
-                color: isActive
-                    ? AppColors.white.withOpacity(0.5)
-                    : AppColors.black.withOpacity(0.5),
-                height: 1.5),
+              fontFamily: 'Poppins',
+              fontSize: 10,
+              fontWeight: FontWeight.w600,
+              color: isActive
+                  ? AppColors.white.withOpacity(0.5)
+                  : AppColors.black.withOpacity(0.5),
+              height: 1.5,
+            ),
           ),
           Text(
             date,
             style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-                color: isActive ? AppColors.white : AppColors.black,
-                height: 1),
+              fontFamily: 'Poppins',
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+              color: isActive ? AppColors.white : AppColors.black,
+              height: 1,
+            ),
           ),
           Text(
             day,
             style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 14,
-                color: isActive ? AppColors.white : AppColors.black,
-                height: 1.2),
+              fontFamily: 'Poppins',
+              fontSize: 14,
+              color: isActive ? AppColors.white : AppColors.black,
+              height: 1.2,
+            ),
           ),
         ],
       ),

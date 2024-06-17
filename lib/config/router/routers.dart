@@ -15,6 +15,10 @@ final appRouterProvider = Provider<GoRouter>(
           builder: (context, state) => const ListComponentsScreen(),
         ),
         GoRoute(
+          path: '/appBar',
+          builder: (context, state) => const AppBarScreen(),
+        ),
+        GoRoute(
           path: '/calendar',
           builder: (context, state) => const CalendarScreen(),
         ),
@@ -27,11 +31,11 @@ final appRouterProvider = Provider<GoRouter>(
           builder: (context, state) => const TimeLineScreen(),
         ),
         GoRoute(
-          path: '/card-default',
+          path: '/cardDefault',
           builder: (context, state) => const CardDefaultScreen(),
         ),
         GoRoute(
-          path: '/card-active-route',
+          path: '/cardActiveRoute',
           builder: (context, state) => const CardActiveRouteScreen(),
         ),
         GoRoute(
