@@ -34,7 +34,7 @@ class TimeLineEvent extends StatelessWidget {
     final double circleSize = size.width * 0.06;
     final double lineWidth = size.width * 0.01;
     final double paddingHorizontal = size.width * 0.025;
-    final double verticalLineHeight = size.height * 0.13;
+    final double verticalLineHeight = size.height * 0.09;
 
     final hour = time.substring(0, time.length - 2);
     final period = time.substring(time.length - 2);

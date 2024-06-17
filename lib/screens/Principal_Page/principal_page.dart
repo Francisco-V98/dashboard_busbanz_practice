@@ -29,7 +29,7 @@ class BodySection extends StatelessWidget {
     return const Stack(
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 24),
+          padding: EdgeInsets.only(top: 76),
           child: TimeLine(),
         ),
         Column(
