@@ -5,71 +5,93 @@ class PrincipalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: AppColors.bgBotLight,
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: Stack(
-              children: [
-                AspectRatio(
-                  aspectRatio: 16 / 9,
-                  child: Image.asset(
-                    "assets/images/fondo_amarillo.png",
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Positioned(
-                  top: size.height * 0.13,
-                  left: 0,
-                  right: 0,
-                  child: const CalendarContainerGroup(),
-                ),
-                SizedBox(
-                  height: size.height * 0.14,
-                  child: const Center(
-                    child: AppBarBusbanz(
-                      title: "Hola, Freddy",
-                      image: "assets/images/imagen_de_conductor.png",
-                    ),
-                  ),
-                ),
-                Positioned(
-                  top: size.height * 0.4,
-                  child: const TimeLine(),
-                ),
-                Positioned(
-                  top: size.height * 0.45,
-                  right: size.width * 0.07,
-                  width: size.width * 0.75,
-                  child: const CardActiveRoute(
-                    textLeft: 'Estudiante',
-                    textRight: 'Colegio',
-                    textbuttom: 'Ruta AB32-5',
-                    numberUser: 12,
-                  ),
-                ),
-                Positioned(
-                  top: size.height * 0.3,
-                  child: const TimeLineHeader(),
-                ),
-                Positioned(
-                  width: size.width * 0.75,
-                  right: size.width * 0.07,
-                  top: size.height * 0.67,
-                  child: const CardDefault(
-                    textLeft: "Colegio",
-                    textRight: "Estudiantes",
-                    textbuttom: "Ruta AB32-5",
-                  ),
-                ),
-              ],
-            ),
-          ),
+          HeaderSection(),
+          SizedBox(height: 8),
+          BodySection(),
         ],
       ),
     );
   }
 }
+
+class BodySection extends StatelessWidget {
+  const BodySection({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return const Stack(
+      children: [
+        Padding(
+          padding: EdgeInsets.only(top: 24),
+          child: TimeLine(),
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TimeLineHeader(),
+            SizedBox(height: 16),
+            Padding(
+              padding: EdgeInsets.only(left: 62, right: 16),
+              child: Column(
+                children: [
+                  CardActiveRoute(
+                    textLeft: 'Estudiante',
+                    textRight: 'Colegio',
+                    textbuttom: 'Ruta AB32-5',
+                    numberUser: 12,
+                  ),
+                  SizedBox(height: 16),
+                  CardDefault(
+                    textLeft: "Colegio",
+                    textRight: "Estudiantes",
+                    textbuttom: "Ruta AB32-5",
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class HeaderSection extends StatelessWidget {
+  const HeaderSection({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        AspectRatio(
+          aspectRatio: 16 / 9,
+          child: Image.asset(
+            "assets/images/fondo_amarillo.png",
+            fit: BoxFit.cover,
+          ),
+        ),
+        const SafeArea(
+          child: Column(
+            children: [
+              AppBarBusbanz(
+                title: 'Hola, Freddy',
+                image: 'assets/images/imagen_de_conductor.png',
+              ),
+              CalendarContainerGroup(),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
